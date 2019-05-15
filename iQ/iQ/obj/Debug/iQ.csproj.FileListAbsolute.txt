@@ -1,0 +1,7 @@
+C:\Users\ullas\source\repos\iQ\iQ\bin\Debug\iQ.exe.config
+C:\Users\ullas\source\repos\iQ\iQ\bin\Debug\iQ.exe
+C:\Users\ullas\source\repos\iQ\iQ\bin\Debug\iQ.pdb
+C:\Users\ullas\source\repos\iQ\iQ\obj\Debug\iQ.csprojAssemblyReference.cache
+C:\Users\ullas\source\repos\iQ\iQ\obj\Debug\iQ.csproj.CoreCompileInputs.cache
+C:\Users\ullas\source\repos\iQ\iQ\obj\Debug\iQ.exe
+C:\Users\ullas\source\repos\iQ\iQ\obj\Debug\iQ.pdb
