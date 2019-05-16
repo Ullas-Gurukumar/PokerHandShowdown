@@ -70,27 +70,42 @@ public class Card : IComparable<Card>
 
     public int CompareTo(Card other)
     {
+        var retVal = 0;
         if (this.rank == other.rank)
         {
-            if (this.suitRank > other.suitRank)
-            {
-                return 1;
-            }
-            else if (this.suitRank < other.suitRank)
-            {
-                return -1;
-            }
+            retVal = CompareSuitRank(other);
         }
         else
         {
-            if (this.rank > other.rank)
-            {
-                return 1;
-            }
-            else if (this.rank < other.rank)
-            {
-                return -1;
-            }
+            retVal = CompareRank(other);
+        }
+
+        return retVal;
+    }
+
+    public int CompareRank(Card other)
+    {
+        if (this.rank > other.rank)
+        {
+            return 1;
+        } 
+        else if (this.rank < other.rank)
+        {
+            return -1;
+        }
+
+        return 0;
+    }
+
+    public int CompareSuitRank(Card other)
+    {
+        if (this.suitRank > other.suitRank)
+        {
+            return 1;
+        }
+        else if (this.suitRank < other.suitRank)
+        {
+            return -1;
         }
 
         return 0;

@@ -5,8 +5,8 @@ namespace iQ
 {
     internal class Player
     {
-        String name;
-        List<Card> hand = new List<Card>();
+        public String name;
+        public List<Card> hand = new List<Card>();
 
         public Player(String name)
         {
@@ -21,6 +21,12 @@ namespace iQ
             {
                 hand.Add(new Card(card));
             }
+        }
+
+        public Boolean hasFlush()
+        {
+            return hand[0].suitRank == hand[1].suitRank && hand[0].suitRank == hand[2].suitRank &&
+                hand[0].suitRank == hand[3].suitRank && hand[0].suitRank == hand[4].suitRank;
         }
     }
 }

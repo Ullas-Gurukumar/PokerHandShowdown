@@ -167,5 +167,77 @@ namespace iQ.Tests
             Assert.IsTrue(temp.suitRank == 4);
             Assert.AreEqual(temp.suitName, "Spades");
         }
+
+        [TestMethod()]
+        public void checkCompareRank()
+        {
+            var first = new Card("8D");
+            var second = new Card("10S");
+
+            Assert.IsTrue(first.CompareRank(second) == -1);
+            Assert.IsTrue(second.CompareRank(first) == 1);
+            Assert.IsTrue(second.CompareRank(second) == 0);
+            Assert.IsTrue(first.CompareRank(first) == 0);
+
+            first = new Card("2D");
+            second = new Card("2C");
+
+            Assert.IsTrue(first.CompareRank(second) == 0);
+            Assert.IsTrue(second.CompareRank(first) == 0);
+            Assert.IsTrue(second.CompareRank(second) == 0);
+            Assert.IsTrue(first.CompareRank(first) == 0);
+
+            first = new Card("2C");
+            second = new Card("AS");
+
+            Assert.IsTrue(first.CompareRank(second) == -1);
+            Assert.IsTrue(second.CompareRank(first) == 1);
+            Assert.IsTrue(second.CompareRank(second) == 0);
+            Assert.IsTrue(first.CompareRank(first) == 0);
+
+            first = new Card("10H");
+            second = new Card("QC");
+
+            Assert.IsTrue(first.CompareTo(second) == -1);
+            Assert.IsTrue(second.CompareTo(first) == 1);
+            Assert.IsTrue(second.CompareTo(second) == 0);
+            Assert.IsTrue(first.CompareTo(first) == 0);
+        }
+
+        [TestMethod()]
+        public void checkCompareSuitRank()
+        {
+            var first = new Card("8D");
+            var second = new Card("10S");
+
+            Assert.IsTrue(first.CompareSuitRank(second) == -1);
+            Assert.IsTrue(second.CompareSuitRank(first) == 1);
+            Assert.IsTrue(second.CompareSuitRank(second) == 0);
+            Assert.IsTrue(first.CompareSuitRank(first) == 0);
+
+            first = new Card("2D");
+            second = new Card("2C");
+
+            Assert.IsTrue(first.CompareSuitRank(second) == -1);
+            Assert.IsTrue(second.CompareSuitRank(first) == 1);
+            Assert.IsTrue(second.CompareSuitRank(second) == 0);
+            Assert.IsTrue(first.CompareSuitRank(first) == 0);
+
+            first = new Card("2C");
+            second = new Card("AS");
+
+            Assert.IsTrue(first.CompareSuitRank(second) == -1);
+            Assert.IsTrue(second.CompareSuitRank(first) == 1);
+            Assert.IsTrue(second.CompareSuitRank(second) == 0);
+            Assert.IsTrue(first.CompareSuitRank(first) == 0);
+
+            first = new Card("10H");
+            second = new Card("QC");
+
+            Assert.IsTrue(first.CompareSuitRank(second) == 1);
+            Assert.IsTrue(second.CompareSuitRank(first) == -1);
+            Assert.IsTrue(second.CompareSuitRank(second) == 0);
+            Assert.IsTrue(first.CompareSuitRank(first) == 0);
+        }
     }
 }

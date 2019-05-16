@@ -34,6 +34,10 @@ namespace iQ
                 {
                     createBoard(lines, prevEnd, end);
                 }
+                else 
+                {
+                    createBoard(lines, prevEnd, lines.Length);
+                }
             }
 
             Console.ReadLine();
@@ -54,7 +58,12 @@ namespace iQ
             }
 
 
-            Console.WriteLine("hahahah");
+            foreach (Player p in players)
+            {
+                Console.WriteLine("Name: " + p.name + " has a flush " + p.hasFlush());
+            }
+
+            Console.WriteLine("\n");
         }
 
         static bool isFlush(String[] hand)
