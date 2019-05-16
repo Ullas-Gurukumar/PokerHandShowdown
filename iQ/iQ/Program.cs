@@ -12,14 +12,6 @@ namespace iQ
 
         static void Main(string[] args)
         {
-            String Joe = "8S, 8D, AD, QD, JH";
-            String Bob = "AS, QS, 8S, 6S, 4S";
-            String Sally = "4S, 4H, 3H, QC, 8C";
-
-            var joe = new Player("Joe", Joe.Split(new string[] { ", " }, StringSplitOptions.RemoveEmptyEntries));
-            var bob = new Player("Bob", Bob.Split(new string[] { ", " }, StringSplitOptions.RemoveEmptyEntries));
-            var sally = new Player("Sally", Sally.Split(new string[] { ", " }, StringSplitOptions.RemoveEmptyEntries));
-
             string[] lines = File.ReadAllLines(textFile);
 
             var end = 0;
@@ -54,37 +46,16 @@ namespace iQ
 
             for (int i=start; i<end; i+=2)
             {
-                players.Add(new Player(lines[i], lines[i + 1].Split(new string[] { ", " }, StringSplitOptions.RemoveEmptyEntries)));
+                players.Add(new Player(lines[i], lines[i + 1]));
             }
 
 
             foreach (Player p in players)
             {
-                Console.WriteLine("Name: " + p.name + " has a flush " + p.hasFlush());
+                Console.WriteLine("Name: " + p.name + " has a pair " + p.hasAPair());
             }
 
             Console.WriteLine("\n");
-        }
-
-        static bool isFlush(String[] hand)
-        {
-            foreach (String card in hand)
-                if (hand[0][1] != card[1])
-                {
-                    return false;
-                }
-
-            return true;
-        }
-
-        static void isThreeOfAKind()
-        {
-
-        }
-
-        static void isOnePair()
-        {
-
         }
     }
 }
