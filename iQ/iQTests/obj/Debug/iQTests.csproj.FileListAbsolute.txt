@@ -1,0 +1,17 @@
+C:\Users\ullas\Documents\PokerHandShowdown\iQ\iQTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\ullas\Documents\PokerHandShowdown\iQ\iQTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\ullas\Documents\PokerHandShowdown\iQ\iQTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\ullas\Documents\PokerHandShowdown\iQ\iQTests\bin\Debug\iQTests.dll
+C:\Users\ullas\Documents\PokerHandShowdown\iQ\iQTests\bin\Debug\iQTests.pdb
+C:\Users\ullas\Documents\PokerHandShowdown\iQ\iQTests\bin\Debug\iQ.exe
+C:\Users\ullas\Documents\PokerHandShowdown\iQ\iQTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\ullas\Documents\PokerHandShowdown\iQ\iQTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\ullas\Documents\PokerHandShowdown\iQ\iQTests\bin\Debug\iQ.pdb
+C:\Users\ullas\Documents\PokerHandShowdown\iQ\iQTests\bin\Debug\iQ.exe.config
+C:\Users\ullas\Documents\PokerHandShowdown\iQ\iQTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\ullas\Documents\PokerHandShowdown\iQ\iQTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\ullas\Documents\PokerHandShowdown\iQ\iQTests\obj\Debug\iQTests.csprojAssemblyReference.cache
+C:\Users\ullas\Documents\PokerHandShowdown\iQ\iQTests\obj\Debug\iQTests.csproj.CoreCompileInputs.cache
+C:\Users\ullas\Documents\PokerHandShowdown\iQ\iQTests\obj\Debug\iQTests.csproj.CopyComplete
+C:\Users\ullas\Documents\PokerHandShowdown\iQ\iQTests\obj\Debug\iQTests.dll
+C:\Users\ullas\Documents\PokerHandShowdown\iQ\iQTests\obj\Debug\iQTests.pdb
