@@ -65,6 +65,42 @@ namespace iQ.Tests
             }
         }
 
+        [TestMethod()]
+        public void checkCompareTo()
+        {
+            var first = new Card("8D");
+            var second = new Card("10S");
+
+            Assert.IsTrue(first.CompareTo(second) == -1);
+            Assert.IsTrue(second.CompareTo(first) == 1);
+            Assert.IsTrue(second.CompareTo(second) == 0);
+            Assert.IsTrue(first.CompareTo(first) == 0);
+
+            first = new Card("2D");
+            second = new Card("2C");
+
+            Assert.IsTrue(first.CompareTo(second) == -1);
+            Assert.IsTrue(second.CompareTo(first) == 1);
+            Assert.IsTrue(second.CompareTo(second) == 0);
+            Assert.IsTrue(first.CompareTo(first) == 0);
+
+            first = new Card("2C");
+            second = new Card("AS");
+
+            Assert.IsTrue(first.CompareTo(second) == -1);
+            Assert.IsTrue(second.CompareTo(first) == 1);
+            Assert.IsTrue(second.CompareTo(second) == 0);
+            Assert.IsTrue(first.CompareTo(first) == 0);
+
+            first = new Card("10H");
+            second = new Card("QC");
+
+            Assert.IsTrue(first.CompareTo(second) == -1);
+            Assert.IsTrue(second.CompareTo(first) == 1);
+            Assert.IsTrue(second.CompareTo(second) == 0);
+            Assert.IsTrue(first.CompareTo(first) == 0);
+        }
+
 
         [TestMethod()]
         public void checkSetRank()

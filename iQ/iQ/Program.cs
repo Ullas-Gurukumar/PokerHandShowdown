@@ -53,6 +53,7 @@ namespace iQ
                 players.Add(new Player(lines[i], lines[i + 1].Split(new string[] { ", " }, StringSplitOptions.RemoveEmptyEntries)));
             }
 
+
             Console.WriteLine("hahahah");
         }
 

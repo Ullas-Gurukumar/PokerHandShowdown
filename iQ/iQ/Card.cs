@@ -70,28 +70,26 @@ public class Card : IComparable<Card>
 
     public int CompareTo(Card other)
     {
-        bool sameRank = this.rank == other.rank;
-
-        if (sameRank)
+        if (this.rank == other.rank)
         {
             if (this.suitRank > other.suitRank)
             {
-                return -1;
+                return 1;
             }
             else if (this.suitRank < other.suitRank)
             {
-                return 1;
+                return -1;
             }
         }
         else
         {
             if (this.rank > other.rank)
             {
-                return -1;
+                return 1;
             }
             else if (this.rank < other.rank)
             {
-                return 1;
+                return -1;
             }
         }
 
