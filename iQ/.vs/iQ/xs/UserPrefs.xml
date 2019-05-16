@@ -1,0 +1,40 @@
+﻿<Properties StartupConfiguration="{428DD536-B2C8-40B3-AA0E-E9BFF4C0C801}|Unit Tests">
+  <MonoDevelop.Ide.ItemProperties.iQ PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="iQ/Tests/CardsTest.cs">
+    <Files>
+      <File FileName="iQ/Program.cs" Line="70" Column="20" />
+      <File FileName="iQ/Player.cs" Line="18" Column="1" />
+      <File FileName="iQ/Tests/CardsTest.cs" Line="14" Column="12" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="iQ" expanded="True">
+            <Node name="iQ" expanded="True">
+              <Node name="Packages" expanded="True" />
+              <Node name="Tests" expanded="True">
+                <Node name="CardsTest.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name="iQ" expanded="True" selected="True" />
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/ullas/Documents/PokerHandShowdown/iQ/iQ/Program.cs" relfile="iQ/Program.cs" line="22" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

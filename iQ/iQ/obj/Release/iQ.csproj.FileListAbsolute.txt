@@ -1,0 +1,10 @@
+/Users/ullas/Documents/PokerHandShowdown/iQ/iQ/bin/Release/iQ.exe.config
+/Users/ullas/Documents/PokerHandShowdown/iQ/iQ/bin/Release/iQ.exe
+/Users/ullas/Documents/PokerHandShowdown/iQ/iQ/bin/Release/iQ.pdb
+/Users/ullas/Documents/PokerHandShowdown/iQ/iQ/obj/Release/iQ.csproj.CoreCompileInputs.cache
+/Users/ullas/Documents/PokerHandShowdown/iQ/iQ/obj/Release/iQ.exe
+/Users/ullas/Documents/PokerHandShowdown/iQ/iQ/obj/Release/iQ.pdb
+/Users/ullas/Documents/PokerHandShowdown/iQ/iQ/bin/Release/nunit.framework.dll
+/Users/ullas/Documents/PokerHandShowdown/iQ/iQ/bin/Release/nunit.framework.pdb
+/Users/ullas/Documents/PokerHandShowdown/iQ/iQ/bin/Release/nunit.framework.xml
+/Users/ullas/Documents/PokerHandShowdown/iQ/iQ/obj/Release/iQ.csproj.CopyComplete
