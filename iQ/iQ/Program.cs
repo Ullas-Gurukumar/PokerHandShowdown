@@ -1,25 +1,59 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.IO;
 
 namespace iQ
 {
     class Program
     {
+        static readonly string textFile = @"../../input.txt";
+        static List<Player> players = new List<Player>();
+        string[] stringSeparator = new string[] {", "};
+
         static void Main(string[] args)
         {
-            var Joe = "8S,8D,AD,QD,JH";
-            var Bob = "AS,QS,8S,6S,4S";
-            var Sally = "4S,4H,3H,QC,8C";
+            String Joe = "8S, 8D, AD, QD, JH";
+            String Bob = "AS, QS, 8S, 6S, 4S";
+            String Sally = "4S, 4H, 3H, QC, 8C";
 
-            var joe = new Player("Joe", Joe.Split(','));
-            var bob = new Player("Bob", Bob.Split(','));
-            var sally = new Player("Sally", Sally.Split(','));
+            var joe = new Player("Joe", Joe.Split(new string[] { ", " }, StringSplitOptions.RemoveEmptyEntries));
+            var bob = new Player("Bob", Bob.Split(new string[] { ", " }, StringSplitOptions.RemoveEmptyEntries));
+            var sally = new Player("Sally", Sally.Split(new string[] { ", " }, StringSplitOptions.RemoveEmptyEntries));
 
+            string[] lines = File.ReadAllLines(textFile);
+
+            var end = 0;
+            var prevEnd = 0;
+
+            while(end != -1)
+            {
+                prevEnd = end;
+                end = Array.FindIndex(lines, end + 1, s => s.Equals(""));
+
+                if (end != -1)
+                {
+                    createBoard(lines, prevEnd, end);
+                }
+            }
 
             Console.ReadLine();
+        }
+
+        static void createBoard(string[] lines, int start, int end)
+        {
+            players = new List<Player>();
+
+            if (lines[start].Equals(""))
+            {
+                start++;
+            }
+
+            for (int i=start; i<end; i+=2)
+            {
+                players.Add(new Player(lines[i], lines[i + 1].Split(new string[] { ", " }, StringSplitOptions.RemoveEmptyEntries)));
+            }
+
+            Console.WriteLine("hahahah");
         }
 
         static bool isFlush(String[] hand)
@@ -43,32 +77,12 @@ namespace iQ
 
         }
     }
-
-    public class Player
-    {
-        public String name;
-        public Card[] hand;
-
-        public Player(String name, String[] hand)
-        {
-            this.name = name;
-            this.hand = new Card[5];
-
-            for (int i=0; i<this.hand.Length; i++)
-            {
-                this.hand[i] = new Card(hand[i]);
-            }
-
-        }
-
-
-    }
 }
 
 /*
  * Assumptions
  * 2 is the lowest card and Ace is the highest
- *  
+ * Each player will have 5 cards in hand
  * 
  * 
  */

@@ -1,0 +1,27 @@
+Joe
+8S, 8D, AD, QD, JH
+Bob
+AS, QS, 8S, 6S, 4S
+Sally
+4S, 4H, 3H, QC, 8C
+
+Joe
+QD, 8D, KD, 7D, 3D
+Bob
+AS, QS, 8S, 6S, 4S
+Sally
+4S, 4H, 3H, QC, 8C
+
+Joe
+3H, 5D, 9C, 9D, QH
+Bob
+5C, 7D, 9H, 9S, QS
+Sally
+2H, 2C, 5S, 10C, AH
+
+Joe
+2H, 3D, 4C, 5D, 10H
+Bob
+5C, 7D, 8H, 9S, QD
+Sally
+2C, 4D, 5S, 10C, JH
