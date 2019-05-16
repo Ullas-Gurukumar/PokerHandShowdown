@@ -8,8 +8,6 @@ namespace iQ
         public String name;
         public List<Card> hand = new List<Card>();
 
-
-
         public Player(String name)
         {
             this.name = name;
@@ -32,6 +30,7 @@ namespace iQ
             sortHand();
         }
 
+        // Sorts the hand, lowest being index 0 and highest being index 4
         public void sortHand()
         {
             compareCards compare = new compareCards();

@@ -8,7 +8,6 @@ namespace iQ
     {
         static readonly string textFile = @"../../input.txt";
         static List<Player> players = new List<Player>();
-        string[] stringSeparator = new string[] {", "};
 
         static void Main(string[] args)
         {
@@ -59,11 +58,3 @@ namespace iQ
         }
     }
 }
-
-/*
- * Assumptions
- * 2 is the lowest card and Ace is the highest
- * Each player will have 5 cards in hand
- * 
- * 
- */
