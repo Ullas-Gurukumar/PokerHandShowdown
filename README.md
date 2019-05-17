@@ -5,6 +5,10 @@ I have only tested with input file and unit testing. All the example had only 3 
 I didn't know which files were important to push to my repo so I ended up pushing the compiled classes and caches as well. Sorry if that causes any trouble.
 Everything was done on Windows 10 (build 18875)
 
+## Unit Testing
+
+CheckAllCardRanks, CheckAllCardSuitRanks, CheckAllCardSuitNames tests in CardsTests is not a traditional unit test, I generated all cards and iterated through them and only these methods are using the setup method. The reason for doing this is because it was an easy way to generate all cards due to the nature of poker cards. 
+
 ## Assumptions
 * First line will be Name of the player and the next line will be there 5 card.
 * Each card will be separated with ", "
