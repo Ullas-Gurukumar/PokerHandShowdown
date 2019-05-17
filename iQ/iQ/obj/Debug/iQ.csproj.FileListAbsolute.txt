@@ -15,4 +15,3 @@ C:\Users\ullas\Documents\PokerHandShowdown\iQ\iQ\obj\Debug\iQ.csproj.CoreCompile
 C:\Users\ullas\Documents\PokerHandShowdown\iQ\iQ\obj\Debug\iQ.csproj.CopyComplete
 C:\Users\ullas\Documents\PokerHandShowdown\iQ\iQ\obj\Debug\iQ.exe
 C:\Users\ullas\Documents\PokerHandShowdown\iQ\iQ\obj\Debug\iQ.pdb
-C:\Users\ullas\Documents\PokerHandShowdown\iQ\iQ\obj\Debug\iQ.csprojAssemblyReference.cache
