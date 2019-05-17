@@ -2,6 +2,8 @@
 
 The first board in the example shows that Joe wins but Bob should win. Bob should win because Bob has a flush while Joe only has a pair. (Flush > Pair)
 I have only tested with input file and unit testing. All the example had only 3 players
+I didn't know which files were important to push to my repo so I ended up pushing the compiled classes and caches as well. Sorry if that causes any trouble.
+Everything was done on Windows 10 (build 18875)
 
 ## Assumptions
 * First line will be Name of the player and the next line will be there 5 card.
