@@ -14,15 +14,21 @@ Sally
 
 Joe
 3H, 5D, 9C, 9D, QH
-Bob
+Jen
 5C, 7D, 9H, 9S, QS
-Sally
+Bob
 2H, 2C, 5S, 10C, AH
 
 Joe
 2H, 3D, 4C, 5D, 10H
-Bob
+Jen
 5C, 7D, 8H, 9S, QD
-Sally
+Bob
 2C, 4D, 5S, 10C, JH
 
+Joe
+8S, 8D, AD, QD, JH
+Bob
+AS, QC, 8H, 6D, 4S
+Sally
+4S, 4H, 3H, QC, 8C

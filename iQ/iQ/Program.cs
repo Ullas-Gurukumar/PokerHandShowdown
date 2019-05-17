@@ -16,8 +16,9 @@ namespace iQ
             var end = 0;
             var prevEnd = 0;
 
-            while(end != -1)
+            while (end != -1) 
             {
+                // finds the beginning and end of the board
                 prevEnd = end;
                 end = Array.FindIndex(lines, end + 1, s => s.Equals(""));
 
@@ -25,13 +26,13 @@ namespace iQ
                 {
                     createBoard(lines, prevEnd, end);
                 }
-                else 
+                else
                 {
                     createBoard(lines, prevEnd, lines.Length);
                 }
             }
 
-            Console.ReadLine();
+            Console.ReadLine(); // to prevent terminal from closing
         }
 
         static void createBoard(string[] lines, int start, int end)
@@ -43,18 +44,44 @@ namespace iQ
                 start++;
             }
 
-            for (int i=start; i<end; i+=2)
+            // starts creating all the players and also prints out the inputs
+            for (int i = start; i < end; i += 2)
             {
                 players.Add(new Player(lines[i], lines[i + 1]));
+                Console.WriteLine(lines[i] + "\n" + lines[i + 1]);
             }
 
-
+            // checks if every player is the winner
             foreach (Player p in players)
             {
-                Console.WriteLine("Name: " + p.name + " has a pair " + p.hasAPair());
-            }
+                int numWins = 0;
+                int numTies = 0;
+                foreach (Player other in players)
+                {
+                    if (!p.Equals(other))
+                    {
+                        int val = p.CompareTo(other);
+                        if (val == 0)
+                        {
+                            numTies++;
+                        }
+                        else if (val == 1)
+                        {
+                            numWins++;
+                        }
+                    }
+                }
 
-            Console.WriteLine("\n");
+                // won against every other player
+                if (numWins == players.Count - 1)
+                {
+                    Console.WriteLine("\n" + p.name + " WINS!!\n\n");
+                }
+                else if (numTies > 0) //there was a tie
+                {
+                    Console.WriteLine("\n" + p.name + " tied!!\n\n");
+                }
+            }
         }
     }
 }

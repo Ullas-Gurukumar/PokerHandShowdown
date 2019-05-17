@@ -5,6 +5,8 @@ public class Card : IComparable<Card>
     public int suitRank;
     public int rank;
     public String card;
+    
+    // the names are unnecessary but I set it with future enhancement in mind
     public String suitName;
     public String rankName;
 
