@@ -23,3 +23,5 @@ CheckAllCardRanks, CheckAllCardSuitRanks, CheckAllCardSuitNames tests in CardsTe
 This is the first time I have used C#. I used Visual Studio 2019 to generate the base empty project, built classes and unit testing on top of that based on microsoft documentation. 
 Due to my lack of experience withing with .net and C#, I might not be using the best practices for C#. I'm using C# similar to the way I use Java.
 
+## Output
+![output.png](https://github.com/Ullas-Gurukumar/PokerHandShowdown/raw/master/output.png)
